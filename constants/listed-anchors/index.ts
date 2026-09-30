@@ -9,6 +9,8 @@
 import type { ListedAnchor } from '@/types';
 import { parseListedAnchors } from '@/lib/stellar/listed-anchor-schema';
 
-const RAW: unknown[] = [];
+import meshMzar from './mesh-mzar.json';
+
+const RAW: unknown[] = [meshMzar];
 
 export const LISTED_ANCHORS: readonly ListedAnchor[] = parseListedAnchors(RAW);
