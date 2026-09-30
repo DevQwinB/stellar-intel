@@ -9,6 +9,8 @@
 import type { ListedAnchor } from '@/types';
 import { parseListedAnchors } from '@/lib/stellar/listed-anchor-schema';
 
-const RAW: unknown[] = [];
+import moneygramMgusd from './moneygram-mgusd.json';
+
+const RAW: unknown[] = [moneygramMgusd];
 
 export const LISTED_ANCHORS: readonly ListedAnchor[] = parseListedAnchors(RAW);
